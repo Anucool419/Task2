@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOOT OUT!</title>
+</head>
+<body>
+    SHOOOOT OUT!!!
+ <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<div><span>Score: </span><span id="scoreEl">0</span></div>
+<div class="fixed inset-0 flex items-center justify-center" id="modEl">
+    <div class="bg-white max-w-md w-full p-6 text-center">
+        <h1 class="text-4xl font-bold" id="finalscore">0</h1>
+        <p class="text-sm text-gray-700">Points</p>
+        <div>
+            <button class="bg-yellow-500 text-white w-full py-3" id="StartG">START GAME</button>
+        </div>
+        </div> 
+ </div>
+
+</body> 
+
+<canvas> background-image: url("https://assets.wired.com/photos/w_2000/wp-content/uploads/2016/12/BSP_056.jpg");  
+</canvas>
+<script src="canvasg.js"></script>
+<img id="scream" width="220" height="277" src="pic_the_scream.jpg" alt="The Scream">
+
+
+
+<canvas id="myCanvas" width="240" height="297" style="border:1px solid grey;"></canvas>
+
+<script>
+window.onload = function() {
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+  const img = document.getElementById("scream");
+  ctx.drawImage(img, 10, 10);
+};
+</script>
+
+<style>
+    
+    
+    body{  
+        margin: 0;
+
+        background-image: url("https://assets.wired.com/photos/w_2000/wp-content/uploads/2016/12/BSP_056.jpg");  
+        
+    }
+
+</style>
+<div class="rectangle"></div>
+</body>
+</html>
